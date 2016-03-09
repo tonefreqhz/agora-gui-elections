@@ -112,6 +112,9 @@
     "legal": {
         "title": "Legal terms",
         "contact": "contact"
+    },
+    "documentation": {
+        "title": "Documentation"
     }
   }
 }

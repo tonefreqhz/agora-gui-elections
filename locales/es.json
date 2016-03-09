@@ -114,6 +114,9 @@
     "legal": {
         "title": "Términos legales",
         "contact": "contacto"
+    },
+    "documentation": {
+        "title": "Documentación"
     }
   }
 }

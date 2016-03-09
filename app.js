@@ -143,6 +143,11 @@ angular.module('agora-gui-elections').config(
         url: '/logout',
         controller: "LogoutController"
       })
+      .state('election.public.show.documentation', {
+        url: '/documentation',
+        templateUrl: 'avElection/public-controller/documentation.html',
+        controller: "PublicController"
+      })
       .state('election.public.show.legal', {
         url: '/legal',
         templateUrl: 'avElection/public-controller/legal.html',

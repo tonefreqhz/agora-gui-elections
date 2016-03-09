@@ -33,6 +33,7 @@ angular.module('avElection').controller('PublicController',
         $scope.layout = mapLayouts[$scope.election.layout];
         $scope.electionState = value.payload.state;
         $scope.results = angular.fromJson(value.payload.results);
+        $scope.configService = ConfigService;
       })
       // on error, like parse error or 404
       .error(function (error) {
