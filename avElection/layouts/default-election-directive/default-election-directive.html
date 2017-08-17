@@ -11,7 +11,7 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div 
+      <div
         class="collapse navbar-collapse"
         id="navbar-collapse-1"
       >
@@ -19,20 +19,27 @@
           <div class="row avb-top-navbar">
             <div class="pull-left">
               <span ng-if="election.logo_url">
-                <img 
-                  class="logo-img" 
+                <img
+                  class="logo-img"
                   ng-src="{{election.logo_url}}"
                 >
                 </img>
               </span>
-              <span 
+              <span ng-if="!election.logo_url">
+                <img
+                  class="logo-img"
+                  ng-src="/admin/img/nVotes_logo_small.png"
+                >
+                </img>
+              </span>
+              <span
                 ng-i18next="[html:i18next]({url: organization.orgUrl, name: organization.orgName})avCommon.poweredBy"
                 ng-if="!election.logo_url"
               >
               </span>
             </div>
             <div class="pull-right">
-              <span 
+              <span
                 ng-if="!!buttonsInfo"
                 ng-repeat="q in buttonsInfo"
               >
