@@ -30,7 +30,6 @@ angular.module(
   'infinite-scroll',
   'angularMoment',
   'avConfig',
-  'avPluginsConfig',
   'jm.i18next',
   'avUi',
   'avRegistration',
